@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+$zebraLte8:                      false !default;//斑马线效果是否支持ie8，如果支持请在tr里面添加class odd
+$tableBgColorHover:              #e1dad0 !default; // for hover
+$tableBgColorOdd:               #f9f5ef !default; // even
+$tableBgColorEven:               #e1dad0 !default; // even odd
+
+@mixin tr-hover($hover: $tableBgColorHover){
+  tbody {
+    tr:hover > td{
+      background-color: $hover;
+    }
+  }
+}
+
+@mixin zebra-stripe($even: $tableBgColorEven,$odd:$tableBgColorOdd){
+  tbody {
+    & > tr:nth-child(even) > td{
+      background-color: $even;
+    }
+    & > tr:nth-child(odd) > td{
+      background-color: $odd;
+    }
+  }
+  @if $zebraLte8 {
+    tr.even td{
+      background-color: $even;
+    }
+    tr.odd td{
+      background-color: $odd;
+    }
+  }
+}

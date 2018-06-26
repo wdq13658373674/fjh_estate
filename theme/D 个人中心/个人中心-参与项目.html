@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description"content="haorooms博客,html的meta总结，meta是html语言head区的一个辅助性标签。">
+    <title>test</title>
+
+    <!--commonCss start-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--commonCss end-->
+
+    <!--selfCss start-->
+    <link rel="stylesheet" href="../../css/user.css">
+    <!--selfCss end-->
+
+    <!--commonJs start-->
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/public.js"></script>
+    <!--commonJs end-->
+</head>
+<body>
+<!--header start-->
+<iframe src="../user-header.html" scrolling="0" frameborder="0" style="width:100%;height:161px;"></iframe>
+<!--header end-->
+
+<div class="user-wrap min-width">
+    <div class="user-crumbs clearfix">
+        <div class="crumbs mt20 pull-right">
+            <a href="#">房计划地产首页 </a> >
+            <a href="#">个人中心 </a> >
+            <span>推荐客户 </span>
+        </div>
+    </div>
+
+    <div class="user-container mt20 clearfix">
+        <!--menu-list start-->
+        <div class="user-menu  pull-left">
+            <ul class="menu-list">
+                <li class="item"><a class="link active" href="#">个人中心</a></li>
+                <li class="item"><a class="link" href="#">参与项目</a></li>
+                <li class="item"><a class="link" href="#">个人资料</a></li>
+                <li class="item"><a class="link" href="#">推荐客户</a></li>
+            </ul>
+        </div>
+        <!--menu-list end-->
+
+        <!--user-content start-->
+        <div class="user-content pull-right">
+            <div id="user-project" class="clearfix">
+                <a class="project clearfix" href="#">
+                    <div class="img pull-left"><img src="../../images/test/house.jpg" alt=""></div>
+
+                    <div class="content pull-left">
+                        <ul class="msg-list clearfix">
+                            <li class="item w142">
+                                <div class="tit">预计回报率</div>
+                                <div class="con f40">40%</div>
+                            </li>
+                            <li class="item w252">
+                                <div class="tit ml30">项目总投资（元）</div>
+                                <div class="con ml30">2000,000,000.00</div>
+                            </li>
+                            <li class="item">
+                                <div class="tit ml30">预计回报期限（天）</div>
+                                <div class="con ml30">720</div>
+                            </li>
+                        </ul>
+                        <div class="user-hr mt20"></div>
+                        <ul class="msg-list2 clearfix">
+                            <li class="item">
+                                <div class="tit">地块位置</div>
+                                <div class="con">邻水县西部新城三完小旁边</div>
+                            </li>
+                            <li class="item">
+                                <div class="tit">容积率</div>
+                                <div class="con">2.0</div>
+                            </li>
+                            <li class="item">
+                                <div class="tit">地块编号</div>
+                                <div class="con">A-05</div>
+                            </li>
+                            <li class="item">
+                                <div class="tit">绿化率</div>
+                                <div class="con">45%</div>
+                            </li>
+                            <li class="item">
+                                <div class="tit">地块面积</div>
+                                <div class="con">100000 <span class="yellow">m<sup>2</sup></span></div>
+                            </li>
+                            <li class="item">
+                                <div class="tit">建筑密度</div>
+                                <div class="con">55%</div>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+
+                <a class="project clearfix" href="#">
+                    <div class="img pull-left"><img src="../../images/test/house.png" alt=""></div>
+
+                    <div class="content pull-left">
+                        <ul class="msg-list clearfix">
+                            <li class="item w142">
+                                <div class="tit">预计回报率</div>
+                                <div class="con f40">40.00%</div>
+                            </li>
+                            <li class="item w252">
+                                <div class="tit ml30">项目总投资（元）</div>
+                                <div class="con ml30">2000,000,000.00</div>
+                            </li>
+                            <li class="item">
+                                <div class="tit ml30">预计回报期限（天）</div>
+                                <div class="con ml30">720</div>
+                            </li>
+                        </ul>
+                        <div class="user-hr mt20"></div>
+                        <ul class="msg-list2 clearfix">
+                            <li class="item">
+                                <div class="tit">地块位置</div>
+                                <div class="con">邻水县西部新城三完小旁边</div>
+                            </li>
+                            <li class="item">
+                                <div class="tit">容积率</div>
+                                <div class="con">2.0</div>
+                            </li>
+                            <li class="item">
+                                <div class="tit">地块编号</div>
+                                <div class="con">A-05</div>
+                            </li>
+                            <li class="item">
+                                <div class="tit">绿化率</div>
+                                <div class="con">45%</div>
+                            </li>
+                            <li class="item">
+                                <div class="tit">地块面积</div>
+                                <div class="con">100000 <span class="yellow">m<sup>2</sup></span></div>
+                            </li>
+                            <li class="item">
+                                <div class="tit">建筑密度</div>
+                                <div class="con">55%</div>
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+
+                <div class="page-box mt60">
+                    <div id="page"></div>
+                </div>
+            </div>
+        </div>
+        <!--user-content end-->
+    </div>
+</div>
+
+<script src="../../js/addons/layui/layui.js"></script>
+<script>
+    $(function(){
+
+        /**分页**/
+        layui.use('laypage', function(){
+            var laypage = layui.laypage;
+
+            laypage.render({
+                elem: 'page'
+                ,count: 60
+                ,limit:4
+                ,groups:10
+                ,prev: '<em> < </em>'
+                ,next: '<em> > </em>'
+                ,theme: 'own'
+                ,last: '尾页'
+            });
+        });
+    })
+</script>
+</body>
+</html>

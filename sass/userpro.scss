@@ -1,0 +1,194 @@
+@import "core/import";
+
+.user-hr{
+  @include horizontal-line(solid 1px #e1dad0);
+}
+
+.user-crumbs{
+  @extend %main-width;
+}
+
+.user-project-wrap{
+  background: $yellow-light2;
+  overflow: hidden;
+}
+
+.user-project-container{
+  @extend %main-width;
+  background: #fff;
+  margin-bottom:76px;
+  overflow: hidden;
+  min-height:1000px;
+}
+
+#project-container{
+  .project-content{
+    margin:56px 30px 0;
+
+    .img{
+      @include wh(300px,208px);
+      @include border-radius(11px);
+      border: solid 1px #d1a35a;
+      overflow: hidden;
+      text-align: center;
+
+      img{
+        height:100%;
+      }
+    }
+
+    .content{
+      @include wh(804px,auto);
+    }
+
+    .msg-list {
+      .item {
+        border-right: 1px solid #e1dad0;
+        float: left;
+        padding-right: 30px;
+        height: 62px;
+        overflow: hidden;
+
+        &:last-child {
+          border-right: 0;
+        }
+
+        .tit {
+          color: #cbbfaa;
+          @include wh(auto, 19px, 19px);
+          overflow: hidden;
+          font-weight:300;
+        }
+
+        .con {
+          @include wh(auto, 43px, 43px);
+          overflow: hidden;
+          color: $yellow-light;
+          vertical-align: bottom;
+          font-size: 25px;
+          font-weight:300;
+
+        }
+      }
+    }
+
+    .msg-list2{
+      margin-top:32px;
+      .item{
+        float:left;
+        @include wh(33.3333%,35px,35px);
+
+        .tit{
+          color:#cbbfaa;
+          width:75px;
+          float:left;
+        }
+        .con{
+          @extend %ellipsis-basic;
+        }
+      }
+    }
+  }
+
+  #project-tab{
+    @extend %main-width;
+    overflow: hidden;
+    margin:0 30px 0;
+    height:50px;
+    .item{
+      float:left;
+      @include wh(160px,50px,50px);
+      text-align: center;
+      color:$black;
+      font-size:16px;
+      cursor: pointer;
+
+      &.active{
+        background-color: #f4efe8;
+      }
+    }
+  }
+
+  .tab-box{
+    display:none;
+    @extend %main-width;
+    overflow: hidden;
+    min-height:500px;
+
+    &.active{
+      display:block;
+    }
+
+    .content{
+      margin:0 30px;
+    }
+  }
+
+  .project-table{
+    thead{
+      &>tr>td{
+        height: 50px;
+        background-color: #e7b360;
+        text-align: center;
+      }
+    }
+    tbody{
+      &>tr>td{
+        @include wh(auto,50px);
+        color:#2f220f;
+        text-align: center;
+      }
+
+      .edit-box{
+        text-align: right;
+      }
+      .edit{
+        color:$yellow-light;
+        margin-right:15px;
+      }
+
+      .rec{
+        color:#fa4a02;
+      }
+    }
+    @include zebra-stripe();
+  }
+}
+
+#project-sales-detail{
+  .text-box{
+    margin:30px 30px 0;
+    @include wh(1140px,408px);
+    @include border-radius(11px);
+    border: solid 1px #e1dad0;
+    padding:23px;
+  }
+
+  .btn-back{
+    @include btn-yellow(60px);
+    width:330px;
+    margin:80px auto 88px;
+  }
+
+  .project-imgs{
+    margin:10px 30px 0;
+
+    .img-list{
+      width:1155px;
+      .item{
+        @include wh(150px,150px);
+        cursor: pointer;
+        margin-top:15px;
+        margin-right:15px;
+        border:1px solid $yellow-light;
+        overflow: hidden;
+        float:left;
+        text-align: center;
+
+        img{
+          height:100%;
+        }
+      }
+    }
+  }
+}

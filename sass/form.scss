@@ -1,0 +1,119 @@
+@import "core/import";
+
+.form-wrap{
+  min-width: 1200px;
+  background: url("../images/public/reg_bg1.jpg") 0px 0px no-repeat,url("../images/public/reg_bg2.jpg") 0 410px no-repeat,url("../images/public/reg_bg3.jpg") 0 885px no-repeat;
+  height:1211px;
+  overflow: hidden;
+}
+
+.logo{
+  display:block;
+  text-align: center;
+}
+
+.form-box{
+  @include wh(465px,auto);
+  @include border-radius(10px);
+  background-color: #ffffff;
+  @include box-shadow(0 4px 6px 1px rgba(0, 0, 0, 0.1));
+  margin:67px auto 0;
+  padding-bottom:59px;
+  overflow: hidden;
+
+  .title{
+    text-align: center;
+  }
+
+  .btn-submit{
+    @include btn-yellow();
+    width:326px;
+    margin:0 auto;
+  }
+
+  .btn-code{
+    @include btn-white(50px);
+    width:129px;
+    font-size:14px;
+  }
+
+  .link{
+    @include wh(326px,auto);
+    font-size:12px;
+    margin:15px auto 0;
+
+    .yellow-light:hover{
+      text-decoration: underline;
+    }
+  }
+}
+
+.input-group{
+  @include wh(326px,auto);
+  margin:0 auto 0;
+  position: relative;
+
+  .input{
+    @include input(50px);
+
+    &.w189{
+      width:189px;
+    }
+  }
+
+  .icon-input{
+    @include input-icon(50px);
+    background-size:17px 18px;
+    background-position:13px center;
+    background-repeat:no-repeat;
+
+    &.user{
+      background-image: url("../images/icons/c_icon_user.png");
+    }
+    &.phone{
+      background-image: url("../images/icons/c_icon_phone.png");
+    }
+    &.pas{
+      background-image: url("../images/icons/c_icon_pas.png");
+    }
+  }
+}
+
+.rule-box{
+  width:326px;
+  margin:0 auto;
+  font-size:12px;
+
+  .arc{
+    display:block;
+    @include wh(15px,15px);
+    @include border-radius(3px);
+    background-color: #ffffff;
+    border: solid 1px #d0d0d0;
+    margin-right:10px;
+    margin-top:2px;
+  }
+
+  .blue{
+    color:#58a4e8;
+  }
+
+  .check-label{
+    display:block;
+    cursor: pointer;
+
+    .check-input{
+      display:none;
+
+      &:checked{
+        &+.check .arc{
+          background: url("../images/icons/c_icon_suc.png") center no-repeat;
+          background-size: 10px 6px;
+        }
+      }
+    }
+  }
+}
+
+
+

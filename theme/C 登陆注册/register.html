@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description"content="haorooms博客,html的meta总结，meta是html语言head区的一个辅助性标签。">
+    <title>test</title>
+
+    <!--commonCss start-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--commonCss end-->
+
+    <!--selfCss start-->
+    <link rel="stylesheet" href="../../css/form.css">
+    <!--selfCss end-->
+
+    <!--commonJs start-->
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/public.js"></script>
+    <!--commonJs end-->
+</head>
+<body>
+<div class="form-wrap">
+    <a class="logo mt180" href="#"><img src="../../images/public/logo2.png" alt=""></a>
+
+    <div class="form-box">
+        <h1 class="title mt40"><img src="../../images/public/logo2_name.png" alt=""></h1>
+
+        <form class="form mt40" action="" id="regForm">
+            <div class="input-group">
+                <div>
+                    <input class="icon-input phone required" type="text" sucmsg=" " autocomplete="off"  placeholder="请输入手机号">
+                </div>
+                <span class="Validform_checktip suc"></span>
+            </div>
+            <div class="input-group mt20">
+                <div>
+                    <input class="icon-input pas  required" name="password" type="password" sucmsg=" " autocomplete="off" placeholder="请输入密码">
+                </div>
+                <span class="Validform_checktip suc"></span>
+            </div>
+            <div class="input-group mt20">
+                <div>
+                    <input class="icon-input pas required" type="password" sucmsg=" " autocomplete="off" placeholder="请输入密码">
+                </div>
+                <span class="Validform_checktip suc"></span>
+            </div>
+
+            <div class="input-group mt20">
+                <div class="clearfix">
+                    <input class="input w189 pull-left required" type="text" datatype="*" sucmsg=" " autocomplete="off" placeholder="请输入验证码">
+                    <a href="javascript:modules.countDown(60)" id="send" class="btn-code pull-right" type="button">发送验证码</a>
+                </div>
+                <span class="Validform_checktip suc"></span>
+            </div>
+
+            <div class="rule-box clearfix mt20">
+                <label class="check-label pull-left">
+                    <input id="rule" class="check-input" name="rule" datatype="*" sucmsg=" " type="checkbox" checked>
+                    <div class="check clearfix">
+                        <span class="arc pull-left"></span>
+                    </div>
+                </label>
+                <span class="yellow pull-left">我已同意<a class="blue" href="#">《房计划注册协议》</a>协议</span>
+            </div>
+
+            <input id="register" type="submit" class="btn-submit mt30" value="注册">
+        </form>
+    </div>
+</div>
+
+<!--footer start-->
+<iframe src="../footer.html" frameborder="0" style="width:100%;height:105px;"></iframe>
+<!--footer end-->
+
+<script src="../../js/addons/layui/layui.js"></script>
+<script src="../../js/addons/Validform_v5.3.2_min.js"></script>
+<script>
+    $(function(){
+        var form = $("#regForm").Validform({
+            tiptype: 2,
+            showAllError: true,
+        });
+        form.addRule([{
+            ele: ".required:eq(0)",
+            datatype: "m"
+        },
+            {
+                ele: ".required:eq(1)",
+                datatype: "*6-16"
+            },
+            {
+                ele: ".required:eq(2)",
+                datatype: "*",
+                recheck:'password',
+                errormsg:'两次输入密码不一致'
+            }
+        ]);
+    })
+</script>
+</body>
+</html>

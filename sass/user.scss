@@ -1,0 +1,324 @@
+@import "core/import";
+
+#msgForm,#user-recommend{
+  .Validform_checktip{
+    @extend %inline-block;
+  }
+}
+
+.user-hr{
+  @include horizontal-line(solid 1px #e1dad0);
+}
+
+.user-wrap{
+  background: $yellow-light2;
+  overflow: hidden;
+}
+
+.user-crumbs{
+  @extend %main-width;
+}
+
+.user-container{
+  @extend %main-width;
+  background-color: #2f220f;
+  margin-bottom:40px;
+  .user-menu{
+    @include wh(250px,970px);
+    overflow: hidden;
+
+    .menu-list{
+      margin-top:86px;
+      .item{
+        .link{
+          display:block;
+          @include wh(auto,60px,60px);
+          color:#fff;
+          padding-left:99px;
+          background-repeat: no-repeat;
+          background-position:57px center;
+
+          &.icon1{
+            background-image: url("../images/icons/d_menu101.png");
+            background-size: 20px 20px;
+          }
+          &.icon2{
+            background-image: url("../images/icons/d_menu102.png");
+            background-size: 27px 20px;
+          }
+          &.icon3{
+            background-image: url("../images/icons/d_menu103.png");
+            background-size: 23px 23px;
+          }
+          &.icon4{
+            background-image: url("../images/icons/d_menu104.png");
+            background-size: 23px 23px;
+          }
+
+          &.active{
+            background-color: #d1a35a;
+
+            &.icon1{
+              background-image: url("../images/icons/d_menu101_h.png");
+              background-size: 20px 20px;
+            }
+            &.icon2{
+              background-image: url("../images/icons/d_menu102_h.png");
+              background-size: 27px 20px;
+            }
+            &.icon3{
+              background-image: url("../images/icons/d_menu103_h.png");
+              background-size: 23px 23px;
+            }
+            &.icon4{
+              background-image: url("../images/icons/d_menu104_h.png");
+              background-size: 23px 23px;
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+
+  .user-content{
+    @include wh(950px,auto);
+    min-height:970px;
+    overflow: hidden;
+    background: #fff;
+  }
+
+  .user-msg-list{
+    .img{
+      @include wh(140px,140px);
+      overflow: hidden;
+      text-align: center;
+      margin-top:56px;
+      @include border-radius(5px);
+      @include box-shadow(0 5px 4px 0 rgba(136, 104, 53, 0.41));
+      border: solid 1px #d1a35a;
+      img{
+        height:100%;
+      }
+    }
+
+    .msg-list{
+      margin-top:71px;
+      padding-left:160px;
+
+      .item{
+        @include wh(100%,35px,35px);
+      }
+
+      .btn-edit{
+        @include btn-white(35px);
+        @include border-radius(5px);
+        font-size:14px;
+        padding:8px;
+        line-height:17px;
+        width:148px;
+      }
+    }
+  }
+}
+
+
+#user-msg{
+  margin: 0 30px;
+}
+
+.prompt-form{
+  width:417px;
+  margin:0 auto;
+
+  .input-group{
+    .input{
+      @include input();
+      width:326px;
+      margin-left:15px;
+    }
+  }
+
+  .btn-sure{
+    margin-top:50px;
+    @include btn-yellow(45px);
+    @include border-radius(5px);
+  }
+}
+
+#user-recommend{
+  margin: 0 30px;
+
+  .input-group{
+    .label{
+      margin-left:202px;
+    }
+    .input{
+      @include input();
+      width:326px;
+      margin-left:15px;
+    }
+  }
+
+  .btn-rec{
+    @include btn-yellow(45px);
+    width:237px;
+    margin:40px auto;
+  }
+
+  .title{
+    font-size:16px;
+    margin-top:26px;
+    color:$yellow;
+  }
+
+  .table{
+    margin-top:23px;
+
+    tbody{
+      >tr>td{
+        @include wh(auto,50px,50px);
+        color:#2f220f;
+        padding-left:30px;
+      }
+
+      .edit-box{
+        text-align: right;
+      }
+      .edits{
+        color:$yellow-light;
+        margin-right:15px;
+      }
+
+      .rec{
+        color:#fa4a02;
+      }
+    }
+    @include zebra-stripe();
+  }
+}
+
+#user-project{
+  @include wh(100%,auto);
+
+  .project{
+    @include wh(100%,300px);
+    display:block;
+    border: solid 1px #fff;
+    border-bottom-color:#e1dad0;
+
+    &:hover{
+      @include transition(all .2s linear);
+      @include box-shadow(0 5px 4px 0 rgba(136, 104, 53, 0.21));
+      border: solid 1px #d1a35a;
+    }
+
+    .img{
+      @include wh(300px,208px);
+      @include border-radius(11px);
+      border: solid 1px #d1a35a;
+      overflow: hidden;
+      margin-left:30px;
+      margin-top:47px;
+      text-align: center;
+
+      img{
+        height:100%;
+      }
+    }
+
+    .content{
+      @include wh(556px,auto);
+      margin-left:30px;
+      margin-top:47px;
+    }
+
+    .msg-list{
+      .item{
+        border-right:1px solid #e1dad0;
+        float:left;
+        padding-right:5px;
+        height:62px;
+        overflow: hidden;
+
+        &.w252{
+          width:252px;
+        }
+        &.w142{
+          width:142px;
+        }
+
+        &:last-child{
+          border-right:0;
+        }
+
+        .tit{
+          color: #cbbfaa;
+          @include wh(auto,19px,19px);
+          overflow: hidden;
+          font-weight:300;
+        }
+
+        .con{
+          @include wh(auto,43px,43px);
+          overflow: hidden;
+          color:$yellow-light;
+          vertical-align: bottom;
+          font-size:25px;
+          font-weight:300;
+        }
+      }
+    }
+
+    .msg-list2{
+      margin-top:10px;
+      .item{
+        float:left;
+        @include wh(50%,35px,35px);
+
+        .tit{
+          color:#cbbfaa;
+          float:left;
+        }
+        .con{
+          padding-left:20px;
+          @extend %ellipsis-basic;
+        }
+      }
+    }
+  }
+}
+
+#user-edit{
+  margin: 0 30px;
+
+  .input-group{
+    margin-top:30px;
+
+    .label{
+      @extend %inline-block;
+      color:$yellow-light3;
+      @include wh(65px,50px,50px);
+    }
+
+    .input{
+      @include input();
+      width:201px;
+      margin-left:24px;
+
+      &.w326{
+        width:326px;
+      }
+    }
+  }
+
+  .phone{margin-left:24px;}
+  .fixed-select{margin-left:25px;@include select-box(201px,48px,48px);}
+
+  .btn-rec{
+    @include btn-yellow(45px);
+    width:173px;
+    margin:45px auto;
+  }
+}

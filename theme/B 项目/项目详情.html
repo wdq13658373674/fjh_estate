@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description"content="haorooms博客,html的meta总结，meta是html语言head区的一个辅助性标签。">
+    <title>test</title>
+
+    <!--commonCss start-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--commonCss end-->
+
+    <!--selfCss start-->
+    <link rel="stylesheet" href="../../js/addons/swiper/swiper.min.css">
+    <link rel="stylesheet" href="../../js/addons/layui/css/layui.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <!--selfCss end-->
+
+    <!--commonJs start-->
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/public.js"></script>
+    <!--commonJs end-->
+
+    <style>
+
+    </style>
+</head>
+<body>
+<!--header start-->
+<iframe src="../header.html" scrolling="0" frameborder="0" style="width:100%;height:161px;"></iframe>
+<!--header end-->
+
+<div id="project-detail">
+    <div class="crumbs mt40">
+        <a href="#">房计划地产首页 </a> >
+        <a href="#">管理项目 </a> >
+        <span>邻水县西部新城A-01地块 </span>
+    </div>
+
+    <div class="content clearfix">
+        <div class="flash pull-left">
+            <!-- Swiper start -->
+            <div id="gallery" class="swiper-container gallery-top" style="width:100%;height:450px;background:#fff;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                    <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;"></div>
+                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                </div>
+            </div>
+
+            <div class="thumbs-box">
+                <div id="thumbs" class="swiper-container gallery-thumbs" style="width:628px;height:90px;background:#fff;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;"></div>
+                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;"></div>
+                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;"></div>
+                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;"></div>
+                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;"></div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-prev1 gallery-btn"> < </div>
+                <div class="swiper-button-next1 gallery-btn"> > </div>
+                <!-- Swiper end -->
+            </div>
+        </div>
+
+        <div class="msg pull-left">
+            <h1 class="title f20">邻水县西部新城A-01地块</h1>
+
+            <div class="horizontal-line mt50"></div>
+            <ul class="msg-list">
+                <li class="item">
+                    <span class="tit">地块位置</span>
+                    <div class="con">邻水县西部新城三完小旁边</div>
+                </li>
+                <li class="item">
+                    <span class="tit">地块编号</span>
+                    <div class="con">A-05</div>
+                </li>
+                <li class="item">
+                    <span class="tit">地块面积</span>
+                    <div class="con">100000 <span class="yellow-light">m<sup>2</sup></span></div>
+                </li>
+                <li class="item">
+                    <span class="tit">建筑面积</span>
+                    <div class="con">100000 <span class="yellow-light">m<sup>2</sup></span></div>
+                </li>
+                <li class="item">
+                    <span class="tit">容积率</span>
+                    <div class="con">2.0</div>
+                </li>
+                <li class="item">
+                    <span class="tit">绿化率</span>
+                    <div class="con">45%</div>
+                </li>
+                <li class="item">
+                    <span class="tit">建筑密度</span>
+                    <div class="con">55%</div>
+                </li>
+            </ul>
+            <div class="horizontal-line"></div>
+
+            <a href="#" class="btn">意向收集</a>
+        </div>
+    </div>
+</div>
+
+<div id="project-tab" class="mt60">
+    <div class="item">项目介绍</div>
+    <div class="item">周边配套</div>
+    <div class="item active">建设进度</div>
+</div>
+
+<div class="tab-box">
+    <div id="project-box1" class="content mb60">
+        <img src="../../images/test/house.jpg" alt="">
+    </div>
+</div>
+
+<div class="tab-box">
+    <div id="project-box2" class="content mb60 clearfix">
+        <div class="left-box pull-left">
+            <h1>项目区位图</h1>
+
+            <div class="img-box">
+                <div style="position: relative;">
+                    <img class="img" src="../../images/test/house.jpg" alt=""/><!--大图路径-->
+
+                    <!--hover效果-->
+                    <a id="map" href="javascript:void(0);" class="dark-mask-box">
+                        <img class="vr-img zoom-img" layer-src="../../images/test/house.jpg" src="../../images/icons/zoom_add.png" alt=""/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right-box pull-right">
+            <h1>位置及周边</h1>
+            <h2>交通</h2>
+            <p>近临邻水西出口，西部新城1号公路、2号公路、3号公路、入城大道环绕四周，真正做到了项目与老城区、 广邻高速的无缝衔接。</p>
+            <h2>购物</h2>
+            <p>新世纪百货、南洋百货、五星级农贸市场、红星美凯龙、苏宁易购等商业配套齐全，满足您的生活购物需求。</p>
+            <h2>教育</h2>
+            <p>机关幼儿园、鼎屏小学、一完小分校、二完小、邻水二中等邻水优质教育资源云集，让孩子享受从幼儿园到中学全龄化优质教育体系。</p>
+        </div>
+    </div>
+</div>
+
+<div class="tab-box  active">
+    <div id="project-box3" class="content mb60">
+        <!--列表 start-->
+        <ul id="proList" class="pro-list clearfix">
+            <li class="item">
+                <div class="date pull-left">
+                    <p class="year">2016</p>
+
+                    <p class="mon">09-05</p>
+                </div>
+                <div class="tit">
+                    土石方开标
+                </div>
+            </li>
+        </ul>
+        <!--列表 end-->
+
+        <!--详情 start-->
+            <div class="pro-detail">
+                <div class="back"><a href="javascript:void(0)" onclick="$(this).parents('#project-box3').removeClass('active');">返回>></a></div>
+                <div class="top mt20 clearfix">
+                    <div class="top-schedule active">
+                        <div class="descri pull-left">
+                            <div class="title">A-5-1户型</div>
+
+                            <div class="dsc-item">
+                                <span class="tit">户型结构</span>
+                                <span class="con">三室两厅两卫</span>
+                            </div>
+                            <div class="dsc-item">
+                                <span class="tit">建筑面积</span>
+                                <span class="con">约118 <span class="gray">m<sup>2</sup></span></span>
+                            </div>
+                            <div class="dsc-item">
+                                <span class="tit">户型描述</span>
+                                <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+                            </div>
+                        </div>
+                        <div class="flash pull-right">
+                            <!-- Swiper start -->
+                            <div id="gallery0" class="swiper-container gallery-top" style="width:100%;height:386px;border: 1px solid #cbbfaa;background:#fff;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                                </div>
+                            </div>
+                            <div class="thumbs-box">
+                                <div id="thumbs0" class="swiper-container gallery-thumbs mt10" style="width:680px;height:115px;background:#fff;">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;">
+                                            <p class="caption">户型图1</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;">
+                                            <p class="caption">户型图2</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;">
+                                            <p class="caption">户型图3</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;">
+                                            <p class="caption">户型图4</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;">
+                                            <p class="caption">户型图5</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-prev2 gallery-btn"> < </div>
+                                <div class="swiper-button-next2 gallery-btn"> > </div>
+                                <!-- Swiper end -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-schedule">
+                        <div class="descri pull-left">
+                            <div class="title">A-5-1户型</div>
+
+                            <div class="dsc-item">
+                                <span class="tit">户型结构</span>
+                                <span class="con">三室两厅两卫</span>
+                            </div>
+                            <div class="dsc-item">
+                                <span class="tit">建筑面积</span>
+                                <span class="con">约118 <span class="gray">m<sup>2</sup></span></span>
+                            </div>
+                            <div class="dsc-item">
+                                <span class="tit">户型描述</span>
+                                <span class="con">约82平米的套二，大小适中，明厨明卫，动静分离。入户花园面积较大，作为入户的过渡空间，较好地保证了室内的私密性</span>
+                            </div>
+                        </div>
+                        <div class="flash pull-right">
+                            <!-- Swiper start -->
+                            <div id="gallery1" class="swiper-container gallery-top" style="width:100%;height:386px;border: 1px solid #cbbfaa;background:#fff;">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                                    <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;"></div>
+                                </div>
+                            </div>
+                            <div class="thumbs-box">
+                                <div id="thumbs1" class="swiper-container gallery-thumbs mt10" style="width:680px;height:115px;background:#fff;">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;">
+                                            <p class="caption">户型图1</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background:url('../../images/test/house.jpg') center no-repeat;">
+                                            <p class="caption">户型图2</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;">
+                                            <p class="caption">户型图3</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;">
+                                            <p class="caption">户型图4</p>
+                                        </div>
+                                        <div class="swiper-slide" style="background:url('../../images/test/house.png') center no-repeat;">
+                                            <p class="caption">户型图5</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Add Arrows -->
+                                <div class="swiper-button-prev2 gallery-btn"> < </div>
+                                <div class="swiper-button-next2 gallery-btn"> > </div>
+                                <!-- Swiper end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom mt30">
+                    <div class="house-msg-list clearfix">
+                        <label class="check-label">
+                            <input class="check-input" type="radio" name="type" checked>
+                            <div class="msg-item">二室两厅两卫</div>
+                        </label>
+                        <label class="check-label">
+                            <input class="check-input" type="radio" name="type">
+                            <div class="msg-item">二室两厅两卫</div>
+                        </label>
+                        <label class="check-label">
+                            <input class="check-input" type="radio" name="type">
+                            <div class="msg-item">二室两厅两卫</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        <!--详情 end-->
+    </div>
+</div>
+
+<!--footer start-->
+<iframe src="../footer.html" frameborder="0" style="width:100%;height:105px;"></iframe>
+<!--footer end-->
+
+<script src="../../js/addons/swiper/swiper.min.js"></script>
+<script src="../../js/addons/layui/layui.js"></script>
+<script>
+    $(function(){
+        /**flash1**/
+        /**flash1**/
+        var galleryTop = new Swiper('#gallery', {
+            /*autoplay: {
+                delay: 2000,
+            },*/
+            spaceBetween: 10,
+            loop: true,
+            loopedSlides: 4,
+
+        });
+        var galleryThumbs = new Swiper('#thumbs', {
+            // normalizeSlideIndex:false,
+            spaceBetween: 16,
+            slidesPerView: 4,
+            touchRatio: 0.2,
+            loop: true,
+            loopedSlides: 4,
+            slidesOffsetBefore: 0,
+            slideToClickedSlide: true,
+            navigation: {
+                nextEl: '.swiper-button-next1',
+                prevEl: '.swiper-button-prev1',
+            },
+        });
+        galleryTop.controller.control = galleryThumbs;
+        galleryThumbs.controller.control = galleryTop;
+
+        /**tab切换**/
+        $('#project-tab>.item').click(function(){
+            var self = $(this)
+                ,inx=self.index();
+            var tabBox = $('.tab-box');
+            self.addClass('active').siblings('.item').removeClass('active');
+
+
+            tabBox.removeClass('active');
+            tabBox.eq(inx).addClass('active');
+        })
+
+        /**建设进度-显示详情**/
+        $('.pro-list').on('click','.item',function(){
+            $(this).parents('#project-box3').addClass('active');
+        })
+
+        $('.check-label').click(function(){
+            var inx = $(this).index();
+            $('.top-schedule').eq(inx).addClass('active').siblings().removeClass('active');
+
+            schedule_flash(inx)
+        })
+
+        layui.use(['layer', 'flow'],function(){
+            var layer=layui.layer
+                ,flow=layui.flow;
+
+            /**位置周边查看大图**/
+            layer.photos({
+                closeBtn: 1,
+                resize: false,
+                photos: '#map',
+                shift: 5
+            });
+
+            /**下拉加载**/
+            flow.load({
+                elem: '#proList'
+                , end: '哦～！没有更多了'
+                , mb: 100
+                , done: function (page, next) {
+                    //模拟数据插入
+                    setTimeout(function () {
+                        var lis = [];
+                        for (var i = 0; i < 8; i++) {
+                            lis.push('<li class="item">1</li>')
+                        }
+
+                        //执行下一页渲染，第二参数为：满足“加载更多”的条件，即后面仍有分页
+                        //pages为Ajax返回的总页数，只有当前页小于总页数的情况下，才会继续出现加载更多
+                        next(lis.join(''), page < 2); //假设总页数为 2
+                    }, 500);
+                }
+            });
+
+        })
+
+        function schedule_flash(inx) {
+            /**flash2**/
+            var galleryTop2 = new Swiper('#gallery'+inx, {
+                /* autoplay: {
+                     delay: 2000,
+                 },*/
+                spaceBetween: 10,
+                loop:false,
+                loopedSlides: 5,
+            });
+            var galleryThumbs2 = new Swiper('#thumbs'+inx, {
+                spaceBetween: 10,
+                slidesPerView: 5,
+                touchRatio: 0.2,
+                loop: false,
+                // loopedSlides: 5,
+                normalizeSlideIndex:false,
+                // slidesOffsetBefore : 0,
+                slideToClickedSlide: true,
+                navigation: {
+                    nextEl: '.swiper-button-next2',
+                    prevEl: '.swiper-button-prev2',
+                },
+            });
+            galleryTop2.controller.control = galleryThumbs2;
+            galleryThumbs2.controller.control = galleryTop2;
+        }
+    })
+</script>
+</body>
+</html>

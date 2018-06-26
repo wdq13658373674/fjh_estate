@@ -1,0 +1,50 @@
+@import "core/import";
+
+.page-box{
+  text-align: center;
+  .layui-laypage-own{
+    a{
+      margin-right:8px;
+      @include wh(30px,30px,30px);
+      padding:0;
+      text-align: center;
+      @extend %inline-block;
+      border: solid 1px #e1dad0;
+
+
+      &:hover{
+        background-color: #f9f5ef;
+        color:$black;
+      }
+    }
+
+    .layui-laypage-curr,.layui-laypage-spr{
+      @extend %inline-block;
+      margin:-7px 8px 0px 0px;
+      @include wh(30px,30px,30px);
+      padding:0;
+      text-align: center;
+
+      .layui-laypage-em{
+        background-color: #fff;
+        padding:0;
+      }
+      em{
+        color:$yellow-light;
+        font-style: normal;
+      }
+    }
+
+    .layui-laypage-curr{
+      border: solid 1px $yellow-light;
+    }
+
+    .layui-laypage-last{
+      width:67px;
+    }
+
+    .layui-laypage-prev,.layui-laypage-next{
+      width:50px;
+    }
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description"content="haorooms博客,html的meta总结，meta是html语言head区的一个辅助性标签。">
+    <title>test</title>
+
+    <!--commonCss start-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--commonCss end-->
+
+    <!--selfCss start-->
+    <link rel="stylesheet" href="../../css/project.css">
+    <!--selfCss end-->
+
+    <!--commonJs start-->
+    <script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+    <script src="../../js/jquery-3.2.1.js"></script>
+    <!--commonJs end-->
+</head>
+<body>
+<div id="estate">
+
+    <!--header start-->
+    <iframe src="../header.html" scrolling="0" frameborder="0" style="width:100%;height:161px;"></iframe>
+    <!--header end-->
+
+    <div id="project-content">
+        <div class="crumbs mt40">
+            <a href="#">房计划地产首页 </a> >
+            <a href="#">管理项目 </a> >
+            <span>邻水县西部新城A-01地块 </span>
+        </div>
+
+        <div class="content clearfix">
+            <div class="flash pull-left">
+
+            </div>
+
+            <div class="msg pull-left">
+                <h1 class="title f20">邻水县西部新城A-01地块</h1>
+
+                <div class="horizontal-line mt50"></div>
+                <ul class="msg-list">
+                    <li class="item">
+                        <span class="tit">地块位置</span>
+                        <div class="con">{{items.address}}</div>
+                    </li>
+                    <li class="item">
+                        <span class="tit">地块编号</span>
+                        <div class="con">{{items.num}}</div>
+                    </li>
+                    <li class="item">
+                        <span class="tit">地块面积</span>
+                        <div class="con">{{items.mj}} <span class="yellow-light">m<sup>2</sup></span></div>
+                    </li>
+                    <li class="item">
+                        <span class="tit">建筑面积</span>
+                        <div class="con">100000 <span class="yellow-light">m<sup>2</sup></span></div>
+                    </li>
+                    <li class="item">
+                        <span class="tit">容积率</span>
+                        <div class="con">2.0</div>
+                    </li>
+                    <li class="item">
+                        <span class="tit">绿化率</span>
+                        <div class="con">45%</div>
+                    </li>
+                    <li class="item">
+                        <span class="tit">建筑密度</span>
+                        <div class="con">55%</div>
+                    </li>
+                </ul>
+                <div class="horizontal-line"></div>
+
+                <a href="#" class="btn">意向收集</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-tab" class="mt60">
+        <div class="item active">项目介绍</div>
+        <div class="item">周边配套</div>
+        <div class="item">建设进度</div>
+    </div>
+
+    <div id="tab-box1" class="tab-box active">
+        <div class="content">content1</div>
+    </div>
+
+    <div id="tab-box2" class="tab-box">
+        <div class="content">content2</div>
+    </div>
+
+    <div id="tab-box3" class="tab-box">
+        <div class="content">content3</div>
+    </div>
+</div>
+
+
+<!--footer start-->
+<iframe src="../footer.html" frameborder="0" style="width:100%;height:105px;"></iframe>
+<!--footer end-->
+<script>
+    $(function(){
+        $('#project-tab>.item').click(function(){
+            var self = $(this)
+                ,inx=self.index();
+            var tabBox = $('.tab-box');
+            self.addClass('active').siblings('.item').removeClass('active');
+
+
+            tabBox.removeClass('active');
+            tabBox.eq(inx).addClass('active');
+        })
+    })
+</script>
+<script>
+    var example1 = new Vue({
+        el: '#estate',
+        data: {
+            items:{
+                address: '邻水县西部新城三完小旁边',
+                num: 'A-05',
+                mj:'5000'
+            }
+
+        }
+    })
+</script>
+</body>
+</html>

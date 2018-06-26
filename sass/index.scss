@@ -1,0 +1,240 @@
+@import "core/import";
+
+@include font-icon(caret-right);
+
+.index-head{
+  @include wh(100%,702px);
+  background:url("../images/img/a_top101.jpg") top center no-repeat,url("../images/img/a_top102.jpg") bottom center no-repeat;
+
+  .header{
+    background:none;
+
+    .menu{
+      .item{
+        color:#fff;
+
+        &.active{
+          color:$yellow-light;
+        }
+
+        &:hover{
+          @extend .active;
+        }
+      }
+    }
+  }
+}
+
+.index-teams{
+  @extend %main-width;
+  overflow: hidden;
+  margin-top:92px;
+
+  .teams-list{
+    width:1500px;
+    .item{
+      @include wh(149px,auto);
+      float: left;
+      margin-right:200px;
+      text-align: center;
+    }
+
+    .link{
+      display:block;
+    }
+
+    .img{
+      height:104px;
+    }
+
+    .tit{
+      font-size: 20px;
+      color:$black;
+      margin-top:34px;
+    }
+
+    .en{
+      font-size:12px;
+      color: #e1dad0;
+      font-weight: bold;
+      margin-top:8px;
+    }
+  }
+}
+
+.index-title1{
+  @include wh(auto,35px,35px);
+  margin-top: 108px;
+  font-size: 26px;
+  color:$yellow;
+  text-align: center;
+
+  .bg{
+    width:850px;
+    margin:0 auto;
+    background: url("../images/icons/t_r.png") left center no-repeat,url("../images/icons/t_l.png") right center no-repeat;
+  }
+}
+
+.index-title2{
+  @include wh(204px,204px);
+  @include border-radius(50%);
+  background: $yellow-light2;
+  overflow: hidden;
+  position: absolute;
+  top:-75px;
+  left:0;
+  right:0;
+  margin:0 auto;
+
+
+  .content{
+    @include wh(144px,144px);
+    @include border-radius(50%);
+    background: $yellow-light;
+    color:#fff;
+    margin:30px auto;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .con{
+    margin-top:49px;
+  }
+}
+
+.index-projects{
+  position: relative;
+  background: $yellow-light2;
+  margin-top:153px;
+  padding-top:100px;
+  padding-bottom:43px;
+
+  .link-more{
+    @extend %main-width;
+    height:50px;
+    line-height:50px;
+
+    &>a{
+      color:$yellow;
+
+      &:hover{
+        color:$yellow-light;
+      }
+    }
+  }
+
+  .project-list{
+    @extend %main-width;
+
+    .project{
+      margin-bottom:35px;
+      .link{
+        display:block;
+        padding:33px;
+        background: #fff;
+        border: solid 1px #fff;
+        @include transition();
+        @include border-radius(17px);
+
+        &:hover{
+          @include box-shadow(0 12px 11px 2px rgba(136, 104, 53, 0.22));
+          border: solid 1px $yellow-light;
+        }
+      }
+
+      .img{
+        @include wh(420px,290px);
+        @include border-radius(11px);
+        overflow: hidden;
+        border: solid 1px $yellow-light;
+        text-align: center;
+
+        &>img{
+          @include wh(auto,100%);
+        }
+      }
+
+      .content{
+        @include wh(644px,290px);
+        margin-left:42px;
+        overflow: hidden;
+
+        .title{
+          @include wh(100%,30px,30px);
+          margin-top:28px;
+          font-size:20px;
+          color:$black;
+        }
+
+        .msg-list{
+          .item{
+            @include wh(214px,auto);
+            float: left;
+            margin-top:35px;
+            font-size:16px;
+            overflow: hidden;
+          }
+
+          .icon {
+            font-size: 10px;
+            color: $yellow;
+            margin-right: 6px;
+          }
+
+          .tit{
+            color:$black;
+            @include wh(100%,24px,24px);
+          }
+
+          .con{
+            color:$yellow;
+            @include wh(100%,24px,24px);
+            margin-top:10px;
+            @include ellipsis();
+            padding-left:10px;
+          }
+        }
+      }
+    }
+  }
+
+  .project-more{
+    @include wh(auto,20px);
+    text-align: center;
+    a{
+      font-size:10px;
+      color:#dfc497;
+    }
+  }
+}
+
+.index-partners{
+  @extend %main-width;
+  margin:53px auto 93px;
+  overflow: hidden;
+
+  .title{
+    color:$black;
+    text-align: center;
+    margin-top:30px;
+  }
+
+  .partner-list{
+    width:1250px;
+    margin-bottom:58px;
+
+    .item{
+      float: left;
+      display:block;
+      @include wh(178px,80px);
+      border:1px solid $yellow-light;
+      margin-top:30px;
+      margin-right:26.4px;
+    }
+  }
+}
+
+.trangle-l{
+  @include triangle(right, 1px, #000 );
+}

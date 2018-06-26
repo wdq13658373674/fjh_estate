@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+// 开关设置
+//-----------------------------------------------------
+$lte7:                  false !default; //是否兼容ie6-7
+$filter:                true !default; //是否为ie6-8开启css3滤镜兼容，常用于渐变背景
+
+// font相关
+//-----------------------------------------------------
+$baseFontSize:          14px !default;
+$baseLineHeight:        1.5 !default;
+$baseFontFamily:        -apple-system, BlinkMacSystemFont,"Hiragino Sans GB",'Microsoft YaHei','微软雅黑',"Helvetica Neue", Helvetica, Tahoma, sans-serif !default;
+
+
+// 基本颜色
+// color function : http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+// lighten($color, $amount)
+// darken($color, $amount)
+// opacify($color, $amount)
+// mix($color1, $color2[, $amount])
+//-----------------------------------------------------
+$black:#2f220f;
+
+$yellow:#886835;
+$yellow-light:#d1a35a;
+$yellow-light2:#f9f5ef;
+$yellow-light3:#cbbfaa;
+
+$gray:#e5e5e5;
+
+// 交互配色
+// 警告，错误，成功，提示
+//-----------------------------------------------------
+// 每个变量都有三个颜色值，分别为：文本色，背景色，边框色
+$warningColor:               #514721 #FFF6BF #FFD324 !default;
+$errorColor:                 #8A1F11 #FBE3E4 #FBC2C4 !default;
+$successColor:               #264409 #E6EFC2 #C6D880 !default;
+$infoColor:                  #205791 #D5EDF8 #92CAE4 !default;
+
+// 交互配色
+// 警告，错误，成功，提示
+//-----------------------------------------------------
+$placeholder:           true #a0917a !default;
+
+// radius
+//-----------------------------------------------------
+$baseRadius:            5px !default;
+
+// z-index
+//-----------------------------------------------------
+$zindexDropdown:        1000 !default;
+$zindexFixedTopbar:     1010 !default;
+$zindexTooltip:         1020 !default;
+$zindexAlert:           1030 !default;
+$zindexModal:           1100 !default;
+
+
+

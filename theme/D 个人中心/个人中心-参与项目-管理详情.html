@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description"content="haorooms博客,html的meta总结，meta是html语言head区的一个辅助性标签。">
+    <title>test</title>
+
+    <!--commonCss start-->
+    <link rel="stylesheet" href="../../css/common.css">
+    <!--commonCss end-->
+
+    <!--selfCss start-->
+    <link rel="stylesheet" href="../../css/userpro.css">
+    <!--selfCss end-->
+
+    <!--commonJs start-->
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/public.js"></script>
+    <!--commonJs end-->
+</head>
+<body>
+<!--header start-->
+<iframe src="../user-header.html" scrolling="0" frameborder="0" style="width:100%;height:161px;"></iframe>
+<!--header end-->
+
+<div class="user-project-wrap min-width">
+    <div class="user-crumbs clearfix">
+        <div class="crumbs mt20 pull-right">
+            <a href="#">房计划地产首页 </a> >
+            <a href="#">个人中心 </a> >
+            <span>推荐客户 </span>
+        </div>
+    </div>
+
+    <div  id="project-container" class="user-project-container mt20">
+        <div class="project-content clearfix">
+            <div class="img pull-left"><img src="../../images/test/house.jpg" alt=""></div>
+
+            <div class="content pull-right">
+                <ul class="msg-list clearfix">
+                    <li class="item">
+                        <div class="tit">预计回报率</div>
+                        <div class="con f40">40%</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit ml30">项目总投资（元）</div>
+                        <div class="con ml30">2000,000,000.00</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit ml30">预计回报期限（天）</div>
+                        <div class="con ml30">720</div>
+                    </li>
+                </ul>
+                <div class="user-hr mt30"></div>
+                <ul class="msg-list2 clearfix">
+                    <li class="item">
+                        <div class="tit">地块位置</div>
+                        <div class="con">邻水县西部新城三完小旁边</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">容积率</div>
+                        <div class="con">2.0</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">地块编号</div>
+                        <div class="con">A-05</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">绿化率</div>
+                        <div class="con">45%</div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">地块面积</div>
+                        <div class="con">100000 <span class="yellow">m<sup>2</sup></span></div>
+                    </li>
+                    <li class="item">
+                        <div class="tit">建筑密度</div>
+                        <div class="con">55%</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="project-tab" class="mt60">
+            <div class="item active">销售计划管理</div>
+            <div class="item">收入计划管理</div>
+            <div class="item">支出计划管理</div>
+            <div class="item">利润计划管理</div>
+            <div class="item">余额明细</div>
+        </div>
+
+        <!--销售计划管理 start-->
+        <div class="tab-box active">
+            <div id="project-box1" class="content">
+                <div class="title mt50">总销售计划</div>
+                <table class="project-table mt20">
+                    <thead>
+                    <tr>
+                        <td>物业类型</td>
+                        <td>数量（套/个）</td>
+                        <td>面积约（m²）</td>
+                        <td>计划销售95%周期（月）</td>
+                        <td>实际销售95%周期（月）</td>
+                        <td>累计销售数量</td>
+                        <td>累计销售率</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <!--说明：
+                                class = 'tip' : 弹窗提示
+                                data-msg="销售数量的总和" ： 提示信息
+                        -->
+                        <td>洋房</td>
+                        <td><a class="tip" data-msg="销售数量的总和" href="javascript:void(0)">200</a></td>
+                        <td><a href="个人中心-参与项目-销售计划管理详情.html">21,150,000.00</a></td>
+                        <td><a href="javascript:void(0);">24</a></td>
+                        <td><a href="javascript:void(0);">8</a></td>
+                        <td><a class="tip" data-msg="销售数量的总和2" href="javascript:void(0)">200</a></td>
+                        <td><a href="javascript:void(0);">98%</a></td>
+                    </tr>
+                    <tr>
+                        <td>洋房</td>
+                        <td><a class="tip" data-msg="销售数量的总和" href="javascript:void(0)">200</a></td>
+                        <td><a href="个人中心-参与项目-销售计划管理详情.html">21,150,000.00</a></td>
+                        <td><a href="javascript:void(0);">24</a></td>
+                        <td><a href="javascript:void(0);">8</a></td>
+                        <td><a class="tip" data-msg="销售数量的总和2" href="javascript:void(0)">200</a></td>
+                        <td><a href="javascript:void(0);">98%</a></td>
+                    </tr>
+                    <tr>
+                        <td>洋房</td>
+                        <td><a class="tip" data-msg="销售数量的总和" href="javascript:void(0)">200</a></td>
+                        <td><a href="个人中心-参与项目-销售计划管理详情.html">21,150,000.00</a></td>
+                        <td><a href="javascript:void(0);">24</a></td>
+                        <td><a href="javascript:void(0);">8</a></td>
+                        <td><a class="tip" data-msg="销售数量的总和2" href="javascript:void(0)">200</a></td>
+                        <td><a href="javascript:void(0);">98%</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="title mt50">月销售情况</div>
+                <table class="project-table mt20 mb60">
+                    <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>计划</td>
+                        <td>实际</td>
+                        <td>完成率</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>2017年3月</td>
+                        <td>200</td>
+                        <td>450</td>
+                        <td>24%</td>
+                    </tr>
+                    <tr>
+                        <td>2017年3月</td>
+                        <td>200</td>
+                        <td>450</td>
+                        <td>24%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--销售计划管理 end-->
+
+        <!--收入计划管理 start-->
+        <div class="tab-box">
+            <div id="project-box2" class="content">
+                <div class="title mt50">总收入明细</div>
+                <table class="project-table mt20">
+                    <thead>
+                    <tr>
+                        <td>收入明细</td>
+                        <td>预算收入（元）</td>
+                        <td>累计收入（元）</td>
+                        <td>累计完成率</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>股金</td>
+                        <td>20,800,000.00</td>
+                        <td>21,150,000.00</td>
+                        <td>24%</td>
+                    </tr>
+                    <tr>
+                        <td>股金</td>
+                        <td>20,800,000.00</td>
+                        <td>21,150,000.00</td>
+                        <td>24%</td>
+                    </tr>
+                    <tr>
+                        <td>合计</td>
+                        <td>20,800,000.00</td>
+                        <td>21,150,000.00</td>
+                        <td>24%</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="title mt50">月收入明细</div>
+                <table class="project-table mt20 mb60">
+                    <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>计划</td>
+                        <td>实际</td>
+                        <td>完成率</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>2017年3月</td>
+                        <td>200</td>
+                        <td>450</td>
+                        <td>24%</td>
+                    </tr>
+                    <tr>
+                        <td>2017年3月</td>
+                        <td>200</td>
+                        <td>450</td>
+                        <td>24%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--收入计划管理 end-->
+
+        <!--支出计划管理 start-->
+        <div class="tab-box">
+            <div id="project-box3" class="content">
+                <div class="title mt50">总支出明细</div>
+                <table class="project-table mt20">
+                    <thead>
+                    <tr>
+                        <td>支出明细</td>
+                        <td>预算收入（元）</td>
+                        <td>累计收入（元）</td>
+                        <td>累计完成率</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>土地出让金</td>
+                        <td>20,800,000.00</td>
+                        <td>21,150,000.00</td>
+                        <td>24%</td>
+                    </tr>
+                    <tr>
+                        <td>股金</td>
+                        <td>20,800,000.00</td>
+                        <td>21,150,000.00</td>
+                        <td>24%</td>
+                    </tr>
+                    <tr>
+                        <td>合计</td>
+                        <td>20,800,000.00</td>
+                        <td>21,150,000.00</td>
+                        <td>24%</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="title mt50">月支出明细</div>
+                <table class="project-table mt20 mb60">
+                    <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>计划</td>
+                        <td>实际</td>
+                        <td>完成率</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>2017年3月</td>
+                        <td>200</td>
+                        <td>450</td>
+                        <td>24%</td>
+                    </tr>
+                    <tr>
+                        <td>2017年3月</td>
+                        <td>200</td>
+                        <td>450</td>
+                        <td>24%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--支出计划管理 end-->
+
+        <!--利润计划管理 start-->
+        <div class="tab-box">
+            <div id="project-box4" class="content">
+                <div class="title mt50">总利润明细</div>
+                <table class="project-table mt20">
+                    <thead>
+                    <tr>
+                        <td>利润明细</td>
+                        <td>预算利润（元）</td>
+                        <td>累计完成（元）</td>
+                        <td>累计完成率</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>毛利润</td>
+                        <td>20,800,000.00</td>
+                        <td>21,150,000.00</td>
+                        <td>24%</td>
+                    </tr>
+                    <tr>
+                        <td>净利润</td>
+                        <td>20,800,000.00</td>
+                        <td>21,150,000.00</td>
+                        <td>24%</td>
+                    </tr>
+                    <tr>
+                        <td>利润率</td>
+                        <td>20,800,000.00</td>
+                        <td>21,150,000.00</td>
+                        <td>24%</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="title mt50">月利润明细</div>
+                <table class="project-table mt20 mb60">
+                    <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>计划</td>
+                        <td>实际</td>
+                        <td>完成率</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>2017年3月</td>
+                        <td>200</td>
+                        <td>450</td>
+                        <td>24%</td>
+                    </tr>
+                    <tr>
+                        <td>2017年3月</td>
+                        <td>200</td>
+                        <td>450</td>
+                        <td>24%</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--利润计划管理 end-->
+
+        <!--余额明细 start-->
+        <div class="tab-box">
+            <div id="project-box5" class="content">
+                <div class="title mt50">月利润明细</div>
+                <table class="project-table mt20 mb60">
+                    <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>账户余额</td>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>2017年3月</td>
+                        <td>21,150,000.00</td>
+                    </tr>
+                    <tr>
+                        <td>2017年3月</td>
+                        <td>21,150,000.00</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--余额明细 end-->
+    </div>
+</div>
+
+<script src="../../js/addons/layui/layui.js"></script>
+<script>
+    $(function(){
+        /**tab切换**/
+        $('#project-tab>.item').click(function(){
+            var self = $(this)
+                ,inx=self.index();
+            var tabBox = $('.tab-box');
+            self.addClass('active').siblings('.item').removeClass('active');
+
+
+            tabBox.removeClass('active');
+            tabBox.eq(inx).addClass('active');
+        })
+
+
+        layui.use('layer',function(){
+            var layer = layui.layer;
+
+            /** 提示层 ***/
+            $('.tip').on('mouseover',function(){
+                var self = $(this);
+                modules.tips(self);
+            }).on('mouseout',function(){
+                layer.closeAll();
+            })
+        })
+    })
+</script>
+</body>
+</html>
